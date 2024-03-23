@@ -1,0 +1,34 @@
+{
+  "dataset": "flickr30k",
+  "task": "search",
+
+  "text_data_dir": "./dataset/flickr30k_search",
+  "image_feature_dir": "path-to-extracted-vit-features",
+
+  "log_dir": "./log",
+  "monitor": "val_loss",
+  "save_top_k": 1,
+  "mode": "min",
+  "ckpt_filename": "_{epoch:02d}-{val_loss:.4f}",
+
+  "train_batch_size": 32,
+  "eval_batch_size": 256,
+  "num_workers": 0,
+  "seed": 42,
+  "gpus": 1,
+
+  "stage": 2,
+
+  "vision_model": "vit-base",
+  "text_model": "flan-t5-base",
+  "text_model_path": "google/flan-t5-base",
+
+  "max_epochs": 5,
+  "learning_rate": 3e-5,
+  "warm_factor": 0,
+  "weight_decay": 0.01,
+
+  "max_input_length": 256,
+  "max_output_length": 3,
+  "tao": 0.1
+}

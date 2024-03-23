@@ -1,0 +1,34 @@
+{
+  "dataset": "open_images",
+  "task": "localized_narratives",
+
+  "text_data_dir": "./dataset/open_images",
+  "image_feature_dir": "path-to-extracted-vit-features",
+
+  "log_dir": "./log",
+  "monitor": "val_loss",
+  "save_top_k": 1,
+  "mode": "min",
+  "ckpt_filename": "_{epoch:02d}-{val_loss:.4f}",
+
+  "train_batch_size": 20,
+  "eval_batch_size": 64,
+  "num_workers": 0,
+  "seed": 42,
+  "gpus": 1,
+
+  "stage": 1,
+
+  "vision_model": "vit-base",
+  "text_model": "flan-t5-base",
+  "text_model_path": "google/flan-t5-base",
+
+  "max_epochs": 15,
+  "learning_rate": 4e-5,
+  "warm_factor": 0,
+  "weight_decay": 0.01,
+
+  "max_input_length": 128,
+  "max_output_length": 128,
+  "tao": 0.1
+}
