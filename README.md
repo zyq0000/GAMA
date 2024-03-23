@@ -1,5 +1,8 @@
 # GAMA
 
+
+This is the code for the paper "Think Before You Act: A Two-Stage Framework for Mitigating Gender Bias Towards Vision-Language Tasks"
+
 ## Environment
 
 
@@ -31,7 +34,7 @@ python extract_features.py --data_root path-to-images --output_dir path-to-outpu
 Please format the datasets and put the data into "./dataset/dataset_name"
 
 ### Narrative Generation
-```json
+```
 {
     "id": "03f8fb9315c004e5",  // image_id
     "image_path": "03f8fb9315c004e5.jpg",  // image name
@@ -46,7 +49,7 @@ Please format the datasets and put the data into "./dataset/dataset_name"
 
 ### Image Captioning
 
-```json
+```
 {
         "id": "57870",  // image_id
         "image_path": "COCO_train2014_000000057870.jpg",  // image name
@@ -68,7 +71,7 @@ Please format the datasets and put the data into "./dataset/dataset_name"
 
 The test data for VisoGender and VL-Bias should also be converted to this format.
 
-```json
+```
 {
     "id": "57870",
     "image_path": "COCO_train2014_000000057870.jpg",
