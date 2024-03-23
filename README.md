@@ -23,7 +23,7 @@ Please first download the datasets.
 
 
 
-## Step2: Extract Image Feature
+## Step 2: Extract Image Feature
 
 ```shell
 python extract_features.py --data_root path-to-images --output_dir path-to-output --dataset dataset-name
